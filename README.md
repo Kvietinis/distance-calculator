@@ -5,6 +5,7 @@ Calculates distance between 2 points
 * *distance-app* - the Angular web app
 * *distance-api* - dotnet core web api
 * *distance-business* - business related logic
+
   |- *abstractions* - some declared and use interfaces
   |- *implementations* - some implementations used by web app
   |- *abstractions* - some declared and use interfaces
