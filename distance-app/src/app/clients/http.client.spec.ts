@@ -17,7 +17,7 @@ describe('DAppHttpClient', () => {
             imports: [ HttpClientTestingModule ],
             providers: [
                 DAppHttpClient,
-                { provide: 'BASE_URL', useValue: 'baseUrl'}
+                { provide: 'BASE_URL', useValue: 'baseUrl/'}
             ]
         });
 
