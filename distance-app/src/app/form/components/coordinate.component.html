@@ -1,0 +1,32 @@
+<fieldset #fieldset>
+    <div class="form-row">
+        <div class="col">
+            <input
+                id="latitude"
+                name="latitude"
+                type="text"
+                class="form-control"
+                placeholder="Latitude"
+                maxlength="15"
+                [value]="latitude"
+                (input)="onLatitudeInput($event.target.value)">
+            <div [hidden]="!showLatitudeError" class="alert alert-danger">
+                {{validationText}}
+            </div>
+        </div>
+        <div class="col">
+            <input
+                id="longitude"
+                name="longitude"
+                type="text"
+                class="form-control"
+                placeholder="Longitude"
+                maxlength="15"
+                [value]="longitude"
+                (input)="onLongitudeInput($event.target.value)">
+            <div [hidden]="!showLongitudeError" class="alert alert-danger">
+                {{validationText}}
+            </div>
+        </div>
+    </div>
+</fieldset>

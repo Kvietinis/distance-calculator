@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="7" failures="5" time="10.117">
+  <testsuite name="CounterComponent" errors="0" failures="0" skipped="0" timestamp="2019-04-01T07:12:41" time="7.122" tests="2">
+    <testcase classname="CounterComponent should display a title" name="CounterComponent should display a title" time="0.173">
+    </testcase>
+    <testcase classname="CounterComponent should start with count 0, then increments by 1 when clicked" name="CounterComponent should start with count 0, then increments by 1 when clicked" time="0.063">
+    </testcase>
+  </testsuite>
+  <testsuite name="DAppHttpClient" errors="0" failures="4" skipped="0" timestamp="2019-04-01T07:12:41" time="7.189" tests="4">
+    <testcase classname="DAppHttpClient should return rsponse on GET" name="DAppHttpClient should return rsponse on GET" time="0.078">
+      <failure>Error: Expected one matching request for criteria &quot;Match URL: /someUrl&quot;, found none.
+    at HttpClientTestingBackend.Object.&lt;anonymous&gt;.HttpClientTestingBackend.expectOne (D:\packages\common\http\testing\src\backend.ts:93:13)
+    at D:\dev\roomex2\distance-app\src\app\clients\http.client.spec.ts:40:26
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:388:26)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\proxy.js:128:39)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:387:32)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:138:43)
+    at Object.testBody.length (D:\dev\roomex2\distance-app\node_modules\jest-preset-angular\zone-patch\index.js:52:27)
+    at Object.asyncJestTest (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at resolve (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at promise.then (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:73:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+      <failure>Error: Expected no open requests, found 1: GET undefined/someUrl
+    at HttpClientTestingBackend.Object.&lt;anonymous&gt;.HttpClientTestingBackend.verify (D:\packages\common\http\testing\src\backend.ts:130:13)
+    at D:\dev\roomex2\distance-app\src\app\clients\http.client.spec.ts:26:14
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:388:26)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\proxy.js:128:39)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:387:32)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:138:43)
+    at Object.testBody.length (D:\dev\roomex2\distance-app\node_modules\jest-preset-angular\zone-patch\index.js:52:27)
+    at Object.asyncJestLifecycle (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:53:37)
+    at resolve (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at promise.then (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:73:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+    </testcase>
+    <testcase classname="DAppHttpClient should return rsponse on GET" name="DAppHttpClient should return rsponse on GET" time="0.028">
+      <failure>Error: Expected one matching request for criteria &quot;Match URL: /someUrl&quot;, found none.
+    at HttpClientTestingBackend.Object.&lt;anonymous&gt;.HttpClientTestingBackend.expectOne (D:\packages\common\http\testing\src\backend.ts:93:13)
+    at D:\dev\roomex2\distance-app\src\app\clients\http.client.spec.ts:58:26
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:388:26)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\proxy.js:128:39)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:387:32)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:138:43)
+    at Object.testBody.length (D:\dev\roomex2\distance-app\node_modules\jest-preset-angular\zone-patch\index.js:52:27)
+    at Object.asyncJestTest (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at resolve (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at promise.then (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:73:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+    </testcase>
+    <testcase classname="DAppHttpClient shoud return error" name="DAppHttpClient shoud return error" time="0.02">
+      <failure>Error: Expected one matching request for criteria &quot;Match URL: /someUrl&quot;, found none.
+    at HttpClientTestingBackend.Object.&lt;anonymous&gt;.HttpClientTestingBackend.expectOne (D:\packages\common\http\testing\src\backend.ts:93:13)
+    at D:\dev\roomex2\distance-app\src\app\clients\http.client.spec.ts:74:26
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:388:26)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\proxy.js:128:39)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:387:32)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:138:43)
+    at Object.testBody.length (D:\dev\roomex2\distance-app\node_modules\jest-preset-angular\zone-patch\index.js:52:27)
+    at Object.asyncJestTest (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at resolve (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at promise.then (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:73:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+      <failure>Error: Expected no open requests, found 1: GET undefined/someUrl
+    at HttpClientTestingBackend.Object.&lt;anonymous&gt;.HttpClientTestingBackend.verify (D:\packages\common\http\testing\src\backend.ts:130:13)
+    at D:\dev\roomex2\distance-app\src\app\clients\http.client.spec.ts:26:14
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:388:26)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\proxy.js:128:39)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:387:32)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:138:43)
+    at Object.testBody.length (D:\dev\roomex2\distance-app\node_modules\jest-preset-angular\zone-patch\index.js:52:27)
+    at Object.asyncJestLifecycle (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:53:37)
+    at resolve (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at promise.then (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:73:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+    </testcase>
+    <testcase classname="DAppHttpClient shoud return error" name="DAppHttpClient shoud return error" time="0.014">
+      <failure>Error: Expected one matching request for criteria &quot;Match URL: /someUrl&quot;, found none.
+    at HttpClientTestingBackend.Object.&lt;anonymous&gt;.HttpClientTestingBackend.expectOne (D:\packages\common\http\testing\src\backend.ts:93:13)
+    at D:\dev\roomex2\distance-app\src\app\clients\http.client.spec.ts:86:26
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:388:26)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\proxy.js:128:39)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:387:32)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:138:43)
+    at Object.testBody.length (D:\dev\roomex2\distance-app\node_modules\jest-preset-angular\zone-patch\index.js:52:27)
+    at Object.asyncJestTest (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at resolve (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at promise.then (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:73:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+      <failure>Error: Expected no open requests, found 1: GET undefined/someUrl
+    at HttpClientTestingBackend.Object.&lt;anonymous&gt;.HttpClientTestingBackend.verify (D:\packages\common\http\testing\src\backend.ts:130:13)
+    at D:\dev\roomex2\distance-app\src\app\clients\http.client.spec.ts:26:14
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:388:26)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\proxy.js:128:39)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:387:32)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:138:43)
+    at Object.testBody.length (D:\dev\roomex2\distance-app\node_modules\jest-preset-angular\zone-patch\index.js:52:27)
+    at Object.asyncJestLifecycle (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:53:37)
+    at resolve (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at promise.then (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:73:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="distance service" errors="0" failures="1" skipped="0" timestamp="2019-04-01T07:12:41" time="7.742" tests="1">
+    <testcase classname="distance service should return distance" name="distance service should return distance" time="0.089">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 100
+Received: 10
+    at SafeSubscriber._next (D:\dev\roomex2\distance-app\src\app\form\services\distance.service.spec.ts:48:29)
+    at SafeSubscriber.Object.&lt;anonymous&gt;.SafeSubscriber.__tryOrUnsub (D:\dev\roomex2\distance-app\node_modules\rxjs\src\internal\Subscriber.ts:270:10)
+    at SafeSubscriber.Object.&lt;anonymous&gt;.SafeSubscriber.next (D:\dev\roomex2\distance-app\node_modules\rxjs\src\internal\Subscriber.ts:212:14)
+    at Subscriber.Object.&lt;anonymous&gt;.Subscriber._next (D:\dev\roomex2\distance-app\node_modules\rxjs\src\internal\Subscriber.ts:142:22)
+    at Subscriber.Object.&lt;anonymous&gt;.Subscriber.next (D:\dev\roomex2\distance-app\node_modules\rxjs\src\internal\Subscriber.ts:102:12)
+    at MapSubscriber.Object.&lt;anonymous&gt;.MapSubscriber._next (D:\dev\roomex2\distance-app\node_modules\rxjs\src\internal\operators\map.ts:86:22)
+    at MapSubscriber.Object.&lt;anonymous&gt;.Subscriber.next (D:\dev\roomex2\distance-app\node_modules\rxjs\src\internal\Subscriber.ts:102:12)
+    at Subject.Object.&lt;anonymous&gt;.Subject.next (D:\dev\roomex2\distance-app\node_modules\rxjs\src\internal\Subject.ts:62:17)
+    at D:\dev\roomex2\distance-app\src\app\form\services\distance.service.spec.ts:53:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:388:26)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\proxy.js:128:39)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:387:32)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (D:\dev\roomex2\distance-app\node_modules\zone.js\dist\zone.js:138:43)
+    at Object.testBody.length.done (D:\dev\roomex2\distance-app\node_modules\jest-preset-angular\zone-patch\index.js:53:29)
+    at resolve (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at promise.then (D:\dev\roomex2\distance-app\node_modules\jest-jasmine2\build\queueRunner.js:73:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,32 @@
+<form #dappForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+        <div class="form-group">
+            <label for="from">From</label>
+            <dapp-coordinate
+                id="from"
+                name="from"
+                [(ngModel)]="model.from"
+                #from="ngModel">
+            </dapp-coordinate>
+        </div>
+        <div class="form-group">
+            <label for="to">To</label>
+            <dapp-coordinate
+                id="to"
+                name="to"
+                [disabled]="!from.valid"
+                [(ngModel)]="model.to"
+                #to="ngModel">
+            </dapp-coordinate>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-success btn-lg btn-block">Calculate</button>
+        </div>
+        <div *ngIf="errorText" class="text-center alert alert-danger">
+            {{errorText}}
+        </div>
+        <div *ngIf="result && result.value >= 0" class="text-center">
+            <p class="lead">{{result.value}} {{result.units | unit}}</p>
+        </div>
+    </div>
+</form>

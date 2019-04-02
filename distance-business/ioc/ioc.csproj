@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Distance.Business.IoC</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SimpleInjector" Version="4.5.1" />
+    <ProjectReference Include="../abstractions/abstractions.csproj" />
+    <ProjectReference Include="../implementations/implementations.csproj" />
+  </ItemGroup>
+</Project>
